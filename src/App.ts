@@ -1,16 +1,19 @@
-import express, { Application } from "express";
+import express, { Application, json } from "express";
 
 export class App {
   public app: Application;
   public port: number;
 
-  constructor(controllers, port: number) {
+  constructor(controllers: any[], port: number) {
     this.app = express();
     this.port = port;
+
+    this.initializeMiddleware();
+    this.initializeControllers(controllers);
   }
 
   private initializeMiddleware() {
-
+    this.app.use(json());
   }
 
   private initializeControllers(controllers: any[]) {
