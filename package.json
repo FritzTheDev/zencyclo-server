@@ -1,8 +1,11 @@
 {
   "name": "zencyclo-server",
   "version": "0.1.0",
-  "description": "Express.js backend for ZenCyclo, the free internal documentation tool.",
-  "main": "index.js",
+  "description": "Express.js backend for Zencyclo, the free documentation tool.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ScraperDev/zencyclo-server.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
