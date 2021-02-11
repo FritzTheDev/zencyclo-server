@@ -2,13 +2,19 @@
   "name": "zencyclo-server",
   "version": "0.1.0",
   "description": "Express.js backend for Zencyclo, the free documentation tool.",
+  "author": "Frederick Johnson <fritz@workhorsesw.com>",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "https://github.com/ScraperDev/zencyclo-server.git"
   },
   "scripts": {
+    "dev": "ts-node ./src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Frederick Johnson <fritz@workhorsesw.com>",
-  "license": "UNLICENSED"
+  "dependencies": {
+    "express": "^4.17.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  }
 }
